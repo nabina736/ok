@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us-Bikers point Pvt. Ltd.</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="../image/logo.jpg"/>
+	<link rel="shortcut icon" type="image/png" href="../image/logo.jpg"/>
+	<!-- Favicon -->
+	<script type="text/javascript">
+function validate(){
+if(document.myForm.Name.value == ""){
+  document.myForm.Name.focus();
+  alert("please fill Name");
+  return false;
+}
+if(document.myForm.Email.value == ""){
+  document.myForm.Email.focus();
+  alert("please fill Email with valid format having"@"");
+  return false;
+}
+if(document.myForm.Email.value != ""){
+  var emailID = document.myForm.Email.value;
+  atpos = emailID.indexOf("@");
+  dotpos = emailID.lastIndexOf(".");
+  if( atpos < 1 || (dotpos - atpos < 2)){
+  alert("Please enter a valid email address");
+  document.myForm.email.focus();
+  return false;
+  }
+
+if(document.myForm.mobile.value== ""||document.myForm.value.length!=10){
+  alert("Enter Valid Mob.No");
+  document.myForm.mobile.focus();
+  return false; 
+}
+}
+return true;
+}
+
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="../css/Contact/contactus.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!-- Social Media -->
+		<div class="social social768 social320">
+	<div class="email email768 email320">info@bikerspoint.com.np | 0977 - 01 - 652041, 0977 - 01 - 4913682</div>
+	<div class="socialmedia">
+		<ul>
+			<li><a href="https://www.facebook.com"><img src="../image/fbicon.png" style="cursor: pointer;" height="20px" width="20px"></a></li>
+			<li><a href="https://www.twitter.com"><img src="../image/twittericon.png" style="cursor: pointer;" height="20px" width="20px"></a></li>
+			<li><a href="https://www.instagram.com"><img src="../image/instaiocn.png" style="cursor: pointer;" height="20px" width="20px"></a></li>
+		</ul>
+	</div>
+</div>
+	<!-- Social Media -->
+
+	<!-- Navigation with company profile -->
+	<div class="navigation navigation480" >
+
+		<div class="logo logo768 logo320">
+
+			<div class="imga imga480">	<img id="image4" src="../image/logo.jpg" height="55px" width="160px"></div>		
+	
+
+		</div>
+
+		<div class="nav nav480">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../pages/aboutus.html">About</a></li>
+				<li><a href="../pages/service.html">Service</a></li>
+				<li><a href="../pages/gallery.html">Gallery</a></li>
+				<li ><a id="eac" class="eacc eacc480" href="../pages/contactus.html" >Contact Us</a></li>
+			</ul>
+		</div>
+
+		<div>
+			
+		</div>
+	</div>
+	<!-- Navigation with company profile -->
+
+	<!-- Header with banner  -->
+
+	<div class="banner">
+		<div id="bheader">Contact Us</div>
+	</div>
+
+	<!-- Header with banner  -->
+<div id="branch">PEPSICOLA BRANCH (HEAD OFFICE)</div>
+<!-- Adress -->
+<div style="font-weight: bold; margin-left: 20px; margin-top: 10px; font-size: 15px;">Address</div>
+<div style="font-weight: bold; margin-left: 20px; margin-top: 5px; font-size: 15px; color: grey;">Kadaghari - 06, pepsicola, Kathmandu</div>
+<!-- Branch Manager -->
+<div style="font-weight: bold; margin-left: 20px; margin-top: 10px; font-size: 15px;">Branch Manager</div>
+<div style="font-weight: bold; margin-left: 20px; margin-top: 5px; font-size: 15px; color: grey;">swati verma</div>
+<!-- Phone -->
+<div style="font-weight: bold; margin-left: 20px; margin-top: 10px; font-size: 15px;">Phone</div>
+<div style="font-weight: bold; margin-left: 20px; margin-top: 5px; font-size: 15px; color: grey;">01-6526041, 01-439867, 9819825660</div>
+<!-- Email -->
+<div style="font-weight: bold; margin-left: 20px; margin-top: 10px; font-size: 15px;">Email</div>
+<div style="font-weight: bold; margin-left: 20px; margin-top: 5px; font-size: 15px; color: grey;">swt.swati.sv@gmail.com</div>
+	<!-- Contact us Content -->
+
+		<!-- Send Form -->
+		<fieldset style="margin-left: 30px; margin-right: 30px; padding-right: 30px; padding-left: 30px;
+		padding-bottom: 20px; padding-top: 10px; margin-top: 20px; font-size: 20px;">
+			<legend>Send Message</legend>
+			<form >
+	<label>Full Name</label><br>
+	<input type="text" id="name"  placeholder="Enter your full name..." required>
+	<label>Email</label><br>
+	<input type="email"  id="email" placeholder="Enter your email..." required>
+	<label>Phone Number</label><br>
+	<input type="number"  id="phone"placeholder="Enter your phone number..." required>
+	<label>Description</label><br>
+	<input type="text" id="desc"placeholder="Enter your description..." required>
+	<BUTTON onclick="sendmessage()">Send Message</BUTTON>
+</form>
+</fieldset>
+
+		<!-- Send Form -->
+		<!-- Footer Section -->
+		<div style="text-align: center; vertical-align: middle; height: 30px; margin-top: 20px; width: 100%; background-color: black; user-select: none;">
+	<div style="vertical-align: middle;display: inline-block; color: white; margin-top: 5px;">@copyright 2020, swati verma</div>
+	
+</div>
+	<!-- Footer Section -->
+</body>
+</html>
